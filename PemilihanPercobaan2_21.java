@@ -19,6 +19,14 @@ public class PemilihanPercobaan2_21  {
 
     float total = (uas * 0.4F) + (uts * 0.3F) + (kuis * 0.1F) + (tugas * 0.2F);
 
+    // Cara lebih cepat menggunakan TernaryOperator
+    /* String message = 80 < total && total <= 100? "Anda mendapatkan Nilai A, dengan Kualifikasi Sangat Baik"
+        :73 < total && total <= 80? "Anda mendapatkan Nilai B+, dengan Kualifikasi Lebih dari Baik"
+        :65 < total && total <= 73? "Anda mendapatkan Nilai B, dengan Kualifikasi BaiK"
+        :60 < total && total <= 65? "Anda mendapatkan Nilai C+, dengan Kualifikasi Lebih dari Cukup"
+        :50 < total && total <= 60? "Anda mendapatkan Nilai C, dengan Kualifikasi Cukup"
+        :39 < total && total <= 50? "Anda mendapatkan Nilai D, dengan Kualifikasi Kurang"
+        :"Gagal"; */
 
     String message = total < 65 ? "Remidi" : "Tidak Remidi";
     System.out.println("Nilai akhir = "+ total + " sehingga " + message);
@@ -42,8 +50,9 @@ public class PemilihanPercobaan2_21  {
     System.out.println("Anda mendapatkan Nilai D, dengan Kualifikasi Kurang");}
 
     else {
-    System.out.println("Anda mendapatkan Nilai E, dengan Kualifikasi Gagal");}
+    System.out.println("Anda mendapatkan Nilai E, dengan Kualifikasi Gagal");} 
 
+    
 
     }
 }
